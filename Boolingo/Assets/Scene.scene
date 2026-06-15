@@ -3317,7 +3317,7 @@
     {}
   ScriptInputs:
     "":
-      openAIToken: 4200914d-fba0-48a1-a4a0-e67c296b56fc
+      openAIToken: ""
       googleToken: ""
       snapToken: ""
       enableLogging: false
