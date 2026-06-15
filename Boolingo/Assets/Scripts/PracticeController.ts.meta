@@ -1,0 +1,68 @@
+- !<AssetImportMetadata/b5b2da7f-d429-4b8c-852d-e08b1d51a9f8>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 2262d910-2c0e-4368-8447-76806aa00c51
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 2262d910-2c0e-4368-8447-76806aa00c51
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> 27e85f17-873e-456a-ac12-d86812c1db23
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/27e85f17-873e-456a-ac12-d86812c1db23>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 4ed6a41b-6dcd-4369-9742-4bbaabb8fbcf
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    englishPromptText: false
+    feedbackText: false
+    hintPinch: false
+    hintText: false
+    instructionText: false
+    levelManagerObj: false
+    listeningStatusText: false
+    skipPinch: false
+    ttsScriptObj: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - instructionText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      englishPromptText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      listeningStatusText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      feedbackText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      hintText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      hintPinch: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      skipPinch: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      ttsScriptObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      levelManagerObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.Text instructionText
+    - // @input Component.Text englishPromptText
+    - // @input Component.Text listeningStatusText
+    - // @input Component.Text feedbackText
+    - // @input Component.Text hintText
+    - // @input AssignableType hintPinch
+    - // @input AssignableType_1 skipPinch
+    - // @input SceneObject ttsScriptObj
+    - // @input SceneObject levelManagerObj

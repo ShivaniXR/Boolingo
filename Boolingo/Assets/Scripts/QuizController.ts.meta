@@ -1,0 +1,95 @@
+- !<AssetImportMetadata/97306899-93be-4d8d-93f0-ad5d65d53516>
+  ImportedAssetIds:
+    TypeScriptAsset: !<reference> 6ed43b86-7d8e-45f8-a742-894ef60727ea
+  ImporterName: TypeScriptAssetImporter
+  PrimaryAsset: !<reference> 6ed43b86-7d8e-45f8-a742-894ef60727ea
+  PackageType: NotAPackage
+  LegacyPackagePolicy: ~
+  ExtraData:
+    {}
+  AssetDataMap:
+    TypeScriptAsset: !<own> ce098d4f-0b46-49c5-9252-cb488c9a0ebb
+  DependentFiles:
+    []
+  ImporterSettings: !<AssetImporterSettings>
+    {}
+  CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+- !<TypeScriptAssetData/ce098d4f-0b46-49c5-9252-cb488c9a0ebb>
+  SvgIcon: ""
+  SetupScript:
+    code: ""
+  Description: ""
+  VersionMajor: 0
+  VersionMinor: 0
+  VersionPatch: 0
+  ComponentUid: 77caf318-9583-4717-8afe-8eac445c37d7
+  ExportUid: 00000000-0000-0000-0000-000000000000
+  PackagePolicy: CanBeUnpacked
+  ScriptInputsHidden:
+    hindiWordText: false
+    instructionText: false
+    levelManagerObj: false
+    optionBgA: false
+    optionBgB: false
+    optionBgC: false
+    optionBgD: false
+    optionPinchA: false
+    optionPinchB: false
+    optionPinchC: false
+    optionPinchD: false
+    optionTextA: false
+    optionTextB: false
+    optionTextC: false
+    optionTextD: false
+    replayPinch: false
+    romanizedText: false
+    ttsScriptObj: false
+  ScriptTypesHidden:
+    {}
+  ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
+  DeclarationFile: !<reference> 00000000-0000-0000-0000-000000000000
+  Tags:
+    []
+  Attachments:
+    []
+  DefaultScriptInputs:
+    - instructionText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      hindiWordText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      romanizedText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      optionPinchA: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      optionPinchB: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      optionPinchC: !<MappingBased.AssignableType_2> 00000000-0000-0000-0000-000000000000
+      optionPinchD: !<MappingBased.AssignableType_3> 00000000-0000-0000-0000-000000000000
+      optionTextA: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      optionTextB: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      optionTextC: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      optionTextD: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      optionBgA: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      optionBgB: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      optionBgC: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      optionBgD: !<reference.Image> 00000000-0000-0000-0000-000000000000
+      replayPinch: !<MappingBased.AssignableType_4> 00000000-0000-0000-0000-000000000000
+      ttsScriptObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      levelManagerObj: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+  ScriptTypes:
+    -
+      {}
+  InputLines:
+    - // @input Component.Text instructionText
+    - // @input Component.Text hindiWordText
+    - // @input Component.Text romanizedText
+    - // @input AssignableType optionPinchA
+    - // @input AssignableType_1 optionPinchB
+    - // @input AssignableType_2 optionPinchC
+    - // @input AssignableType_3 optionPinchD
+    - // @input Component.Text optionTextA
+    - // @input Component.Text optionTextB
+    - // @input Component.Text optionTextC
+    - // @input Component.Text optionTextD
+    - // @input Component.Image optionBgA
+    - // @input Component.Image optionBgB
+    - // @input Component.Image optionBgC
+    - // @input Component.Image optionBgD
+    - // @input AssignableType_4 replayPinch
+    - // @input SceneObject ttsScriptObj
+    - // @input SceneObject levelManagerObj

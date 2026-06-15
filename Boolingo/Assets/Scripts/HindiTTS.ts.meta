@@ -26,7 +26,14 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    {}
+    audioAlvida: false
+    audioDhanyavaad: false
+    audioHaan: false
+    audioKripaya: false
+    audioMaaf: false
+    audioNahin: false
+    audioNamaste: false
+    audioSuprabhat: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -36,10 +43,23 @@
   Attachments:
     []
   DefaultScriptInputs:
-    -
-      {}
+    - audioNamaste: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      audioDhanyavaad: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      audioAlvida: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      audioKripaya: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      audioMaaf: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      audioHaan: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      audioNahin: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
+      audioSuprabhat: !<reference.AudioComponent> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
-    []
+    - // @input Component.AudioComponent audioNamaste
+    - // @input Component.AudioComponent audioDhanyavaad
+    - // @input Component.AudioComponent audioAlvida
+    - // @input Component.AudioComponent audioKripaya
+    - // @input Component.AudioComponent audioMaaf
+    - // @input Component.AudioComponent audioHaan
+    - // @input Component.AudioComponent audioNahin
+    - // @input Component.AudioComponent audioSuprabhat

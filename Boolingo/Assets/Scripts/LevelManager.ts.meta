@@ -26,7 +26,21 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    {}
+    completePanel: false
+    completeScoreText: false
+    completeTitleText: false
+    completeXPText: false
+    ghostControllerSO: false
+    introPanel: false
+    playAgainPinch: false
+    practiceControllerSO: false
+    practicePanel: false
+    progressBarFill: false
+    progressText: false
+    quizControllerSO: false
+    quizPanel: false
+    scoreText: false
+    startPinch: false
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -36,10 +50,37 @@
   Attachments:
     []
   DefaultScriptInputs:
-    -
-      {}
+    - introPanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      quizPanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      practicePanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      completePanel: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      progressText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      progressBarFill: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      scoreText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      completeTitleText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      completeScoreText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      completeXPText: !<reference.Text> 00000000-0000-0000-0000-000000000000
+      startPinch: !<MappingBased.AssignableType> 00000000-0000-0000-0000-000000000000
+      playAgainPinch: !<MappingBased.AssignableType_1> 00000000-0000-0000-0000-000000000000
+      quizControllerSO: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      practiceControllerSO: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
+      ghostControllerSO: !<reference.SceneObject> 00000000-0000-0000-0000-000000000000
   ScriptTypes:
     -
       {}
   InputLines:
-    []
+    - // @input SceneObject introPanel
+    - // @input SceneObject quizPanel
+    - // @input SceneObject practicePanel
+    - // @input SceneObject completePanel
+    - // @input Component.Text progressText
+    - // @input SceneObject progressBarFill
+    - // @input Component.Text scoreText
+    - // @input Component.Text completeTitleText
+    - // @input Component.Text completeScoreText
+    - // @input Component.Text completeXPText
+    - // @input AssignableType startPinch
+    - // @input AssignableType_1 playAgainPinch
+    - // @input SceneObject quizControllerSO
+    - // @input SceneObject practiceControllerSO
+    - // @input SceneObject ghostControllerSO
