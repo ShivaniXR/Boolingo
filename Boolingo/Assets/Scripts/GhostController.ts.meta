@@ -26,8 +26,7 @@
   ExportUid: 00000000-0000-0000-0000-000000000000
   PackagePolicy: CanBeUnpacked
   ScriptInputsHidden:
-    animMixer: false
-    ghostMaterial: false
+    {}
   ScriptTypesHidden:
     {}
   ReadMe: !<reference> 00000000-0000-0000-0000-000000000000
@@ -37,11 +36,10 @@
   Attachments:
     []
   DefaultScriptInputs:
-    - animMixer: !<reference.AnimationMixer> 00000000-0000-0000-0000-000000000000
-      ghostMaterial: !<reference.Material> 00000000-0000-0000-0000-000000000000
+    -
+      {}
   ScriptTypes:
     -
       {}
   InputLines:
-    - // @input Component.AnimationMixer animMixer
-    - // @input Asset.Material ghostMaterial
+    []

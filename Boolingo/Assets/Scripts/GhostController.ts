@@ -1,3 +1,11 @@
+// GhostController.ts
+// Place on: BooGhost SceneObject
+//
+// NO required @inputs.
+// Animator removed - 3D model only for now.
+// Material tinting gives visual state feedback if a material is found.
+// All state changes also print to console for debugging.
+
 export type GhostState =
   | 'idle'
   | 'happy'
@@ -9,27 +17,9 @@ export type GhostState =
 @component
 export class GhostController extends BaseScriptComponent {
 
-  // Wire in Inspector: AnimationMixer component on BooGhost
-  // Clip names in your GLTF must match the strings below
-  @input animMixer: AnimationMixer;
-
-  // Wire in Inspector: the main material on BooGhost mesh
-  // Used for colour tinting while GLTF is a placeholder
-  @input ghostMaterial: Material;
-
+  private ghostMat: Material | null = null;
   private currentState: GhostState = 'idle';
 
-  // These clip names must match the animation tracks in your imported GLTF
-  private readonly CLIPS: Record<GhostState, string> = {
-    idle:      'ghost_idle',
-    happy:     'ghost_happy',
-    sad:       'ghost_sad',
-    confused:  'ghost_confused',
-    listening: 'ghost_listen',
-    celebrate: 'ghost_celebrate'
-  };
-
-  // Placeholder tints until real animations are wired
   private readonly TINTS: Record<GhostState, vec4> = {
     idle:      new vec4(0.20, 0.80, 0.30, 1.0), // green
     happy:     new vec4(0.95, 0.90, 0.10, 1.0), // yellow
@@ -39,27 +29,29 @@ export class GhostController extends BaseScriptComponent {
     celebrate: new vec4(1.00, 0.40, 0.80, 1.0)  // pink
   };
 
-  onAwake() {
+  onAwake(): void {
+    // Fix: use this.sceneObject.getComponent, not this.getComponent
+    const mesh = this.sceneObject.getComponent('RenderMeshVisual') as RenderMeshVisual;
+    if (mesh && mesh.mainMaterial) {
+      this.ghostMat = mesh.mainMaterial;
+      print('[Ghost] Material found - tinting enabled');
+    } else {
+      print('[Ghost] No material found - state changes print only');
+    }
+
     this.setState('idle');
   }
 
   setState(state: GhostState): void {
-    if (this.currentState === state) return;
     this.currentState = state;
+    print('[Ghost] → ' + state);
 
-    // Play animation clip if mixer is wired
-    if (this.animMixer) {
+    if (this.ghostMat && this.ghostMat.mainPass) {
       try {
-        // start(layerName, offset, loops) - -1 loops indefinitely
-        this.animMixer.start(this.CLIPS[state], 0, -1);
-      } catch {
-        print('[GhostController] Missing clip: ' + this.CLIPS[state]);
+        this.ghostMat.mainPass.baseColor = this.TINTS[state];
+      } catch (_) {
+        print('[Ghost] Could not tint material');
       }
-    }
-
-    // Colour tint on material (placeholder)
-    if (this.ghostMaterial) {
-      this.ghostMaterial.mainPass.baseColor = this.TINTS[state];
     }
   }
 

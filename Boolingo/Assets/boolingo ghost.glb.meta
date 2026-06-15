@@ -1,0 +1,137 @@
+- !<AssetImportMetadata/a616eb71-5199-46b3-ba9d-8c777043a46e>
+  ImportedAssetIds:
+    .hidden/tripo_mat_137656d1-a6bc-4f42-989e-4483ae3f280c: !<reference> e3d3e1aa-55ca-47d9-b6a6-d3dde8fd84a5
+    4a3e924fad0e2f27: !<reference> 9afc407d-885d-4217-b380-08140b5d3e69
+    66780cf3a4dcb2b8: !<reference> e9686d0e-62ed-469d-a5fa-9eea729de28b
+    8752ec8c540627e5: !<reference> 282920e3-15fe-4003-9275-a547edc76e63
+    96f664b015fcd573: !<reference> 851574a5-c9d6-4628-9b0c-e54a7871d9eb
+    Materials/tripo_mat_137656d1-a6bc-4f42-989e-4483ae3f280c: !<reference> 27681dd2-6272-4327-805e-53603b4027ab
+    Materials/tripo_mat_137656d1-a6bc-4f42-989e-4483ae3f280c|tripo_mat_137656d1-a6bc-4f42-989e-4483ae3f280c|GraphPassInfo: !<reference> b6314307-aafd-4fe3-9dce-c4abf23a43e8
+    Meshes/tripo_mesh_137656d1-a6bc-4f42-989e-4483ae3f280c: !<reference> 7d45dcec-770f-4538-98bf-6f482c725e18
+    Scene: !<reference> b7b22afa-a8d2-4760-9257-9a06040a6eb2
+    Textures/cartoonghost3dmodel_basecolor: !<reference> ef440466-6595-452d-aa92-97c04be6ea83
+    Textures/cartoonghost3dmodel_normal: !<reference> d3cb45ca-185e-4b21-9e06-ecd0bf2b15b2
+    Textures/cartoonghost3dmodel_rm: !<reference> 9a69adac-d99e-40fe-a45a-dc3624e85a72
+    e796b617ac83e7d2: !<reference> 63daa4b3-2191-4fea-97de-44569eca0e23
+  ImporterName: GltfImporter
+  PrimaryAsset: !<reference> b7b22afa-a8d2-4760-9257-9a06040a6eb2
+  PackageType: LegacyPackage
+  LegacyPackagePolicy: CanBeUnpackedTransparent
+  ExtraData:
+    {}
+  AssetDataMap:
+    Scene: !<own> fc3c678f-7f90-41c4-a847-99f122670851
+  DependentFiles:
+    []
+  ImporterSettings: !<GltfImporterSettings>
+    UseLegacyImporter: false
+    WithMaterials: true
+    NamingConvention: ByCategorySanitizeV2
+    PersistentIdGenerationAlgorithm: DescriptorBased
+    AnimationCurveOptimization: true
+    CustomAnimationSamplingRate: 30.000000
+    ImportVertexColor: true
+    ImportTangents: true
+    ImportMorphTargetAnimation: true
+    ConvertMetersToCentimeters: true
+    RegenerateTangents: false
+  CompressionSettings: !<ComplexCompressionSettings>
+    Presets:
+      None Compression: !<SingleCompressionSettings>
+        CompressorName: None
+        CompressionSettings: !<own> 00000000-0000-0000-0000-000000000000
+      Performance Compression: !<SingleCompressionSettings>
+        CompressorName: Performance
+        CompressionSettings: !<TextureCompressionMipmapSettings>
+          Level: Medium
+          Mipmap: false
+    ExtensionMappings:
+      mesh: None Compression
+      jpeg: Performance Compression
+    Overrides:
+      {}
+- !<SceneObject/282920e3-15fe-4003-6d8a-5ab81238919c>
+  PrefabRemaps:
+    []
+  Name: tripo_node_137656d1-a6bc-4f42-989e-4483ae3f280c
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    []
+  Components:
+    - !<own> 63daa4b3-2191-4fea-6821-bba96135f1dc
+- !<RenderMeshVisual/63daa4b3-2191-4fea-6821-bba96135f1dc>
+  PrefabRemaps:
+    []
+  Name: tripo_mesh_137656d1-a6bc-4f42-989e-4483ae3f280c
+  Enabled: true
+  RenderOrder: 0
+  StretchMode: Stretch
+  VerticalAlignment: Center
+  HorizontalAlignment: Center
+  MeshShadowMode: None
+  ShadowColor: {x: 1.000000, y: 1.000000, z: 1.000000, w: 1.000000}
+  ShadowDensity: 1.000000
+  Materials:
+    - !<reference> 27681dd2-6272-4327-805e-53603b4027ab
+  Mesh: !<reference> 7d45dcec-770f-4538-98bf-6f482c725e18
+  Skin: !<reference> 00000000-0000-0000-0000-000000000000
+  BlendShapesEnabled: true
+  BlendNormals: false
+  BlendShapes:
+    {}
+- !<SceneObject/851574a5-c9d6-4628-64f3-1ab5878e2614>
+  PrefabRemaps:
+    []
+  Name: Scene
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 282920e3-15fe-4003-6d8a-5ab81238919c
+  Components:
+    []
+- !<SceneObject/9afc407d-885d-4217-4c7f-f7ebf4a2c196>
+  PrefabRemaps:
+    []
+  Name: Scenes
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 1.000000, y: 1.000000, z: 1.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 851574a5-c9d6-4628-64f3-1ab5878e2614
+  Components:
+    []
+- !<SceneObject/e9686d0e-62ed-469d-5a05-61158d621d74>
+  PrefabRemaps:
+    []
+  Name: boolingo ghost
+  Enabled: true
+  Layers: 1
+  LocalTransform: !<TransformEntity>
+    Position: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Rotation: {x: 0.000000, y: 0.000000, z: 0.000000}
+    Scale: {x: 100.000000, y: 100.000000, z: 100.000000}
+    HasSegmentScaleCompensation: false
+  Children:
+    - !<own> 9afc407d-885d-4217-4c7f-f7ebf4a2c196
+  Components:
+    []
+- !<ObjectPrefabAssetData/fc3c678f-7f90-41c4-a847-99f122670851>
+  Prototype: !<ObjectOwner/a27f50f8-5ce3-48c7-8616-7f5e3f01dc14>
+    PackagePath: ""
+    objects:
+      - !<own> e9686d0e-62ed-469d-5a05-61158d621d74
